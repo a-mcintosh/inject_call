@@ -7,6 +7,7 @@ TARGET = inject_call
 DEPENDPATH += . src/test
 INCLUDEPATH += . src/test
 OBJECTS_DIR = build
+DESTDIR = build
 
 # Input
 HEADERS += src/test/inject_call.h

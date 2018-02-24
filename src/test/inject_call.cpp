@@ -33,6 +33,7 @@ int main(int argc, char* argv[]) {
 //  --------------------------------------------------------------
 
 	printf("Continue preparation as in bitcoinrpc.cpp\n");
+	printf("Item Nr. 2 should be %i\n", nHeight);
         string strMethod = argv_local[1];
         std::vector<std::string> \
 		strParams(&argv_local[1], &argv_local[argc_local]);
