@@ -1,0 +1,30 @@
+src/*.exe
+src/bytecoin
+src/bytecoind
+src/test_bytecoin
+src/Signature*
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch
+.bytecoin
+
+# Compilation and Qt preprocessor part
+*.qm
+Makefile
+bytecoin-qt
+
+# Resources cpp
+qrc_*.cpp
+
+# Qt creator
+*.pro.user
+
+# Mac specific
+.DS_Store
+build
+
+!src/leveldb-*/Makefile
