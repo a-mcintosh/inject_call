@@ -12,3 +12,10 @@ DESTDIR = build
 # Input
 HEADERS += src/test/inject_call.h
 SOURCES += src/test/inject_call.cpp
+
+contains(DOIT, 1) {
+	doit.target = doit
+	doit.depends = FORCE $(TARGET)
+	doit.commands = -$(TARGET)
+	QMAKE_EXTRA_TARGETS += doit
+}

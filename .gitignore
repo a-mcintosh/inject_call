@@ -5,6 +5,7 @@ src/test_bytecoin
 src/Signature*
 .*.swp
 *.*~*
+*~
 *.bak
 *.rej
 *.orig
