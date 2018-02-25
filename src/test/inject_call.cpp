@@ -36,13 +36,13 @@ int main(int argc, char* argv[]) {
 	printf("Re-print the argc array.  This should be unchanged.\n");
 	for (int i=0; i<argc_local; i++) \
 		{printf("\t%i  %s\n", i, argv_local[i]);}
+        string strMethod = argv_local[1];
         std::vector<std::string> \
 		strParams(&argv_local[2], &argv_local[argc_local]);
-        string strMethod = argv_local[1];
-	printf("\nItem Nr. 0 should be %i\n", nHeight);
+	printf("\nItem Nr. 0 should be %i.  This code fails.\n", nHeight);
 	for (int i=0; i<argc_local-2; i++) \
 		{printf("\t%i  %s\n", i, strParams[i].c_str());}
-	printf("\nRe-print the argc array.  This should be unchanged.\n");
+	printf("\nRe-print the argc array.  This should be unchanged.  How did this happen?\n");
 	for (int i=0; i<argc_local; i++) \
 		{printf("\t%i  %s\n", i, argv_local[i]);}
 //  --------------------------------------------------------------
